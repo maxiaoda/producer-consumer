@@ -5,8 +5,8 @@ public class Boss {
         Container container = new Container();
         Object lock = new Object();
 
-        Producer producer = new Producer(container,lock);
-        Consumer consumer = new Consumer(container,lock);
+        Producer producer = new Producer(container, lock);
+        Consumer consumer = new Consumer(container, lock);
 
         producer.start();
         consumer.start();
